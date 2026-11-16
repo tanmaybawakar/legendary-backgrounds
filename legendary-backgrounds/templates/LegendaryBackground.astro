@@ -1,0 +1,23 @@
+---
+// legendary-backgrounds: __NAME__ — place inside a hero with position:relative; isolation:isolate; overflow:hidden
+interface Props { live?: boolean }
+const { live = true } = Astro.props;
+---
+<div class="lbg" aria-hidden="true" data-live={live ? "1" : "0"}
+     style="position:absolute;inset:0;z-index:-1;overflow:hidden;background:__PAGE_BG__ url(__BLUR_DATA_URL__) center/cover">
+  <picture>
+    <source media="(max-width: 767px)" type="image/avif" srcset="__MOBILE_AVIF_SRCSET__" sizes="100vw" />
+    <source media="(max-width: 767px)" type="image/webp" srcset="__MOBILE_WEBP_SRCSET__" sizes="100vw" />
+    <source type="image/avif" srcset="__DESKTOP_AVIF_SRCSET__" sizes="100vw" />
+    <img src="__PUBLIC_URL__/__NAME__-desktop-1920.webp" srcset="__DESKTOP_WEBP_SRCSET__" sizes="100vw"
+         alt="" fetchpriority="high" decoding="async"
+         style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:__OBJECT_POSITION__" />
+  </picture>
+</div>
+<script>
+  import { mountLegendaryBackground } from "__LIVE_IMPORT__";
+  import recipe from "./__NAME__.recipe.json";
+  for (const el of document.querySelectorAll<HTMLElement>(".lbg[data-live='1']")) {
+    mountLegendaryBackground(el, { recipe, image: el.querySelector("img")!.currentSrc });
+  }
+</script>

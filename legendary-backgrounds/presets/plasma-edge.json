@@ -1,0 +1,1 @@
+{"name":"plasma-edge","family":"thermal","seed":17,"params":{"mode":"edge","threshold":0.62,"width":0.05},"finish":[{"op":"pixelate","pixel":3,"colors":0},{"op":"grain","amount":0.03}],"text_zone":[0.25,0.3,0.75,0.6],"page_bg":"#000000","_ref":"Gradients/image 922-925.jpg"}

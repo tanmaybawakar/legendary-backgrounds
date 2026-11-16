@@ -1,0 +1,1 @@
+{"name":"peach-halftone","family":"liquid","seed":9,"params":{"mode":"field","scale":1.4,"warp":0.4,"contrast":1.2,"palette":["#3a1f6e","#8a5cc8","#f0a07a","#ffd1a8","#fff3e6"]},"finish":[{"op":"halftone","cell":10,"angle":28,"strength":0.9},{"op":"grain","amount":0.03}],"text_zone":[0.2,0.3,0.8,0.6],"_ref":"Gradients/image 968.jpg"}

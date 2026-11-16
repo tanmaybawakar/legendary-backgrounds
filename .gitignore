@@ -1,0 +1,17 @@
+.DS_Store
+._*
+.claude/
+.cursor/
+.codex/
+.agents/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.legendary-backgrounds/
+PYTHON_PATH.txt

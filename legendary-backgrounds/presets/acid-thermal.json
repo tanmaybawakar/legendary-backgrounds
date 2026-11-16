@@ -1,0 +1,1 @@
+{"name":"acid-thermal","family":"thermal","seed":13,"params":{"mode":"full","cycles":1.3,"palette":["#dca2f0","#8be08f","#b06ad8","#7fe7c4","#e7a7ee"]},"finish":[{"op":"dither","levels":6,"pixel":2,"strength":0.6},{"op":"grain","amount":0.03}],"text_zone":[0.2,0.3,0.8,0.6],"_ref":"Gradients/image 1462568536.jpg, 28-31"}

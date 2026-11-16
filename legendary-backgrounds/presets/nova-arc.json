@@ -1,0 +1,1 @@
+{"name":"nova-arc","family":"glow","seed":3,"params":{"shape":"arc","radius":1.8,"edge_y":0.25,"rim_out":0.09,"rim_in":0.35,"fill":0.35,"palette":["#020208","#0b1a6e","#2f6bff","#8f7dff","#f4f0ff"],"dispersion":0.025,"intensity":1.7},"finish":[{"op":"grain","amount":0.045}],"text_zone":[0.2,0.25,0.8,0.55],"page_bg":"#020208","_ref":"Gradients/Hero 69.jpg, -1.jpg"}

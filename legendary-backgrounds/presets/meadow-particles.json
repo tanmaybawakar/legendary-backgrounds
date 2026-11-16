@@ -1,0 +1,27 @@
+{
+ "name": "meadow-particles",
+ "family": "terrain",
+ "seed": 4,
+ "params": {
+  "horizon": -0.1,
+  "amplitude": 2.4,
+  "camera_height": 2.6,
+  "density_x": 600,
+  "density_z": 220,
+  "brightness": 1.0
+ },
+ "finish": [
+  {
+   "op": "grain",
+   "amount": 0.03
+  }
+ ],
+ "text_zone": [
+  0.2,
+  0.12,
+  0.8,
+  0.42
+ ],
+ "page_bg": "#020403",
+ "_ref": "Nature/Group 3.jpg, 1171274994"
+}

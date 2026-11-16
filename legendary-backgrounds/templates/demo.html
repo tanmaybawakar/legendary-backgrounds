@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Legendary Backgrounds Demo</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; background: #08080a; color: #f4f4f6; font: 15px/1.5 system-ui, sans-serif; }
+  .hero { position: relative; min-height: 100svh; display: grid; place-items: center; overflow: hidden; isolation: isolate; }
+  .hero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+  .hero canvas { z-index: -1; }
+  .copy { text-align: center; padding: 0 16px; }
+  h1 { font-size: clamp(2.2rem, 6vw, 5rem); letter-spacing: -0.03em; margin: 0 0 .3em; text-wrap: balance; }
+  nav { position: fixed; top: 12px; left: 12px; right: 12px; display: flex; gap: 6px; flex-wrap: wrap; z-index: 5; }
+  nav button { background: #0008; color: #fff; border: 1px solid #fff3; border-radius: 99px; padding: 6px 12px; cursor: pointer; backdrop-filter: blur(8px); }
+  nav button[aria-pressed="true"] { background: #fff; color: #000; }
+  .tag { position: fixed; bottom: 12px; left: 12px; background: #0009; padding: 4px 10px; border-radius: 6px; font-size: 13px; }
+</style>
+</head>
+<body>
+<nav id="nav"></nav>
+<section class="hero" id="hero">
+  <img id="still" alt="" fetchpriority="high">
+  <div class="copy"><h1 id="h1">Legendary backgrounds</h1><p>Static first paint · live layer fades in</p></div>
+</section>
+<div class="tag" id="tag"></div>
+<script type="module">
+  import { mountLegendaryBackground, recipeToUniforms } from "./lbg-live.js";
+  const names = (new URLSearchParams(location.search).get("presets") ||
+    "nova-arc,ember-dome-ascii,violet-sky-dome,hourglass-lavender,prism-bolt,magenta-ribbon,sunset-mesh,dusk-dither,peach-halftone,acid-thermal,plasma-edge,prism-light,rainbow-arch,ember-waves,meadow-particles").split(",");
+  const base = new URLSearchParams(location.search).get("base") || "../presets/";
+  const imgBase = new URLSearchParams(location.search).get("img") || "./demo-stills/";
+  let stop = () => {};
+  async function show(n) {
+    stop();
+    const recipe = await (await fetch(base + n + ".json")).json();
+    const still = document.getElementById("still");
+    still.src = imgBase + n + ".jpg";
+    document.getElementById("tag").textContent = `${n} · ${recipe.family} · live mode ${recipeToUniforms(recipe).mode}`;
+    stop = mountLegendaryBackground(document.getElementById("hero"), { recipe, image: still.src });
+    document.querySelectorAll("nav button").forEach((b) => b.setAttribute("aria-pressed", b.dataset.n === n));
+  }
+  const nav = document.getElementById("nav");
+  names.forEach((n) => { const b = document.createElement("button"); b.textContent = n; b.dataset.n = n; b.onclick = () => show(n); nav.append(b); });
+  show(names[0]);
+</script>
+</body>
+</html>

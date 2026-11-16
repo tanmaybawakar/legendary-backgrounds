@@ -1,0 +1,45 @@
+{
+ "name": "violet-sky-dome",
+ "family": "glow",
+ "seed": 2,
+ "params": {
+  "shape": "dome",
+  "flip": true,
+  "radius": 3.2,
+  "edge_y": 0.2,
+  "rim_out": 0.12,
+  "rim_in": 0.25,
+  "fill": 0.9,
+  "fill_width": 0.8,
+  "spread": 3.0,
+  "palette": [
+   "#000000",
+   "#2a0050",
+   "#8b00ff",
+   "#ff5fa0",
+   "#fff4f8"
+  ],
+  "dispersion": 0.03,
+  "intensity": 1.6
+ },
+ "finish": [
+  {
+   "op": "ascii",
+   "cell": 9,
+   "strength": 0.45,
+   "threshold": 0.35
+  },
+  {
+   "op": "grain",
+   "amount": 0.04
+  }
+ ],
+ "text_zone": [
+  0.2,
+  0.5,
+  0.8,
+  0.8
+ ],
+ "page_bg": "#000000",
+ "_ref": "Gradients/image 1462568504.jpg"
+}

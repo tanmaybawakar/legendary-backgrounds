@@ -1,0 +1,1 @@
+{"name":"sunset-mesh","family":"mesh","seed":4,"params":{"palette":["#1f2bd6","#ff4fa3","#ff8a5c","#ff6fb5","#3a7bff","#7af0ff"],"warp":0.4},"finish":[{"op":"grain","amount":0.06,"size":1.2}],"text_zone":[0.2,0.3,0.8,0.65],"_ref":"Gradients/-3.jpg, -4.jpg"}

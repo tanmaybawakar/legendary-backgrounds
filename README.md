@@ -6,7 +6,16 @@ Generate landing-page hero backgrounds from your existing brand colors, copy, la
 Explore distinct directions, choose a contact sheet option, and export desktop + mobile artwork with
 an optional animated WebGL layer.
 
-![Four example background directions](legendary-backgrounds-test-contact-sheet.jpg)
+[Set up the skill](#one-command-setup) · [Copy a setup prompt](#paste-a-setup-prompt-instead) · [Explore the gallery](#more-background-directions)
+
+| | | |
+| --- | --- | --- |
+| **Nova arc · preset**<br>![Violet and blue planetary glow rising from a black field](legendary-backgrounds/templates/demo-stills/nova-arc.jpg) | **Prism light · preset**<br>![Airy rainbow ribbon on a pale background](legendary-backgrounds/templates/demo-stills/prism-light.jpg) | **Painted coast · reference**<br>![Sunset coastline with painted wildflowers and an open sky](legendary-backgrounds/assets/refs/painted-coast-sunset.jpg) |
+| **Liquid print · reference**<br>![Peach and cyan flowing color with a stippled print texture](legendary-backgrounds/assets/refs/dither-liquid-peach-blue.jpg) | **Particle terrain · preset**<br>![Luminous green rolling terrain against black](legendary-backgrounds/templates/demo-stills/meadow-particles.jpg) | **Pixel valley · reference**<br>![Pixel-art river valley under bright blue skies and clouds](legendary-backgrounds/assets/refs/pixel-valley-river.jpg) |
+
+**Presets** are actual renderer outputs included in the download. **References** are included artwork
+that guides optional AI scene generation or style matching; they are not one-command procedural outputs.
+Six picks here; the larger gallery sits below setup so you can get started immediately.
 
 **The whole folder ships:** original-resolution artwork, 86 reference thumbnails, 15 ready-to-render
 presets, Python generators, finishing tools, prompt guides, React/Astro/HTML templates, and the live demo.
@@ -133,6 +142,43 @@ Do not claim native skill support unless your agent actually supports it.
 Agents need to be able to read local files and run Python. This package uses the portable `SKILL.md`
 format; native discovery and cloud-agent availability depend on the host. Local installation does
 not automatically upload the library to a remote agent.
+
+## More background directions
+
+### 15 ready-to-render presets
+
+These are the actual included demo stills, not reference targets. Click an image to inspect it;
+the matching recipe lives in [`legendary-backgrounds/presets/`](legendary-backgrounds/presets/).
+Choose a direction, then let the skill adapt its palette, text zone, and finish to your project.
+
+| | | |
+| --- | --- | --- |
+| **Nova arc**<br>![Violet-blue luminous horizon on black](legendary-backgrounds/templates/demo-stills/nova-arc.jpg) | **ASCII ember dome**<br>![Orange glowing dome with horizontal ASCII texture](legendary-backgrounds/templates/demo-stills/ember-dome-ascii.jpg) | **Violet sky dome**<br>![Pink-violet light pouring down from a curved rim](legendary-backgrounds/templates/demo-stills/violet-sky-dome.jpg) |
+| **Prism bolt**<br>![Electric blue and golden zigzag light on black](legendary-backgrounds/templates/demo-stills/prism-bolt.jpg) | **Magenta ribbon**<br>![Single violet-pink luminous ribbon](legendary-backgrounds/templates/demo-stills/magenta-ribbon.jpg) | **Lavender hourglass**<br>![Lavender light pinched between two dark curves](legendary-backgrounds/templates/demo-stills/hourglass-lavender.jpg) |
+| **Dusk dither**<br>![Gold and violet flowing aurora with dither texture](legendary-backgrounds/templates/demo-stills/dusk-dither.jpg) | **Peach halftone**<br>![Peach and purple liquid field printed through halftone dots](legendary-backgrounds/templates/demo-stills/peach-halftone.jpg) | **Acid thermal**<br>![Mint and lilac psychedelic thermal bands](legendary-backgrounds/templates/demo-stills/acid-thermal.jpg) |
+| **Plasma edge**<br>![Orange and purple thermal contours floating on black](legendary-backgrounds/templates/demo-stills/plasma-edge.jpg) | **Particle meadow**<br>![Green point-cloud hills fading into darkness](legendary-backgrounds/templates/demo-stills/meadow-particles.jpg) | **Ember waves**<br>![Warm luminous waves above a purple dusk field](legendary-backgrounds/templates/demo-stills/ember-waves.jpg) |
+| **Prism light**<br>![Thin holographic ribbon on an airy pale field](legendary-backgrounds/templates/demo-stills/prism-light.jpg) | **Rainbow arch**<br>![Rainbow arch framing a white center](legendary-backgrounds/templates/demo-stills/rainbow-arch.jpg) | **Sunset mesh**<br>![Grainy blue coral and violet mesh gradient](legendary-backgrounds/templates/demo-stills/sunset-mesh.jpg) |
+
+Try: `Use legendary-backgrounds with the prism-bolt preset. Adapt it to my brand colors and keep the headline area dark.`
+
+<details>
+<summary><strong>Explore 9 more reference directions — painted worlds, pixel art, dunes, photography, and print</strong></summary>
+
+These are curated references bundled with the skill, not generated preset outputs. Scene creation
+uses the optional AI workflow; the references also guide composition, palette, and texture.
+
+| | | |
+| --- | --- | --- |
+| **Painted coast**<br>![Warm painted sunset over a flower-lined coastline](legendary-backgrounds/assets/refs/painted-coast-sunset.jpg) | **Sea of clouds**<br>![Lone figure facing an epic mountain vista above clouds](legendary-backgrounds/assets/refs/painted-cliffs-sea-of-clouds-figure.jpg) | **Pixel valley**<br>![Retro pixel-art landscape with a winding river](legendary-backgrounds/assets/refs/pixel-valley-river.jpg) |
+| **Blue dunes**<br>![Minimal sculptural dunes in icy blue duotone](legendary-backgrounds/assets/refs/dunes-duotone-blue.jpg) | **White-space cove**<br>![Turquoise cove beneath a large white headline area](legendary-backgrounds/assets/refs/cutout-cove-white.jpg) | **Midnight lake**<br>![Photographic mountain lake under a dark starry sky](legendary-backgrounds/assets/refs/photo-lake-dusk-mountains.jpg) |
+| **Liquid print**<br>![Dithered peach and cyan liquid flow](legendary-backgrounds/assets/refs/dither-liquid-peach-blue.jpg) | **Prismatic glow**<br>![Soft spectral light streak against black](legendary-backgrounds/assets/refs/glow-bolt-prism.jpg) | **Pink and gold paint**<br>![Textured impasto brushstrokes in pink and gold](legendary-backgrounds/assets/refs/abstract-paint-pink-gold.jpg) |
+
+Try: `Use legendary-backgrounds to explore a painted coast, a pixel valley, and blue duotone dunes. Use the bundled references and show a contact sheet before integrating anything.`
+
+</details>
+
+See the [full style catalogue](legendary-backgrounds/references/styles.md) for more directions and
+finishing recipes, or [try the live demo locally](#try-the-included-live-demo) to explore animation.
 
 ## What it makes
 

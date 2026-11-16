@@ -8,14 +8,13 @@ an optional animated WebGL layer.
 
 [Set up the skill](#one-command-setup) · [Copy a setup prompt](#paste-a-setup-prompt-instead) · [Explore the gallery](#more-background-directions)
 
-| | | |
-| --- | --- | --- |
-| **Nova arc · preset**<br>![Violet and blue planetary glow rising from a black field](legendary-backgrounds/templates/demo-stills/nova-arc.jpg) | **Prism light · preset**<br>![Airy rainbow ribbon on a pale background](legendary-backgrounds/templates/demo-stills/prism-light.jpg) | **Painted coast · reference**<br>![Sunset coastline with painted wildflowers and an open sky](legendary-backgrounds/assets/refs/painted-coast-sunset.jpg) |
-| **Liquid print · reference**<br>![Peach and cyan flowing color with a stippled print texture](legendary-backgrounds/assets/refs/dither-liquid-peach-blue.jpg) | **Particle terrain · preset**<br>![Luminous green rolling terrain against black](legendary-backgrounds/templates/demo-stills/meadow-particles.jpg) | **Pixel valley · reference**<br>![Pixel-art river valley under bright blue skies and clouds](legendary-backgrounds/assets/refs/pixel-valley-river.jpg) |
+![Five featured backgrounds: crimson pencil hills, a fox in a sketched meadow, an autumn valley, glowing red hills at night, and misty watercolor mountains](docs/featured-backgrounds.png)
 
-**Presets** are actual renderer outputs included in the download. **References** are included artwork
-that guides optional AI scene generation or style matching; they are not one-command procedural outputs.
-Six picks here; the larger gallery sits below setup so you can get started immediately.
+**a** Crimson pencil hills · **b** Fox in a sketched meadow · **c** Autumn valley ·
+**d** Midnight crimson · **e** Watercolor mountains
+
+Five featured art directions, with the full preset and reference gallery below setup.
+For illustrated scenes like these, use the skill’s optional AI workflow.
 
 **The whole folder ships:** original-resolution artwork, 86 reference thumbnails, 15 ready-to-render
 presets, Python generators, finishing tools, prompt guides, React/Astro/HTML templates, and the live demo.
